@@ -1,22 +1,28 @@
 # 🚦 Smart City Traffic Pattern Prediction
 
-A Machine Learning project that analyzes historical traffic data, visualizes traffic patterns, and predicts future traffic flow for smart city traffic management.
+A Machine Learning project that analyzes historical traffic data, visualizes traffic patterns, and predicts future traffic flow to support smart city traffic management.
 
 ---
 
-## 📌 Features
+## 📖 Overview
+
+This project uses historical traffic data to analyze vehicle movement at different junctions and forecast future traffic patterns. It includes data preprocessing, visualization, machine learning model training, prediction, and forecasting.
+
+---
+
+## ✨ Features
 
 - 📊 Data preprocessing and cleaning
 - 📈 Exploratory Data Analysis (EDA)
-- 🚗 Traffic trend visualization
-- 🤖 Machine Learning-based traffic prediction
+- 🚗 Traffic pattern visualization
+- 🤖 Machine Learning model training
+- 📉 Model evaluation
 - 🔮 Future traffic forecasting
-- 📉 Automatic graph generation
 - 💾 Export prediction results to CSV
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -30,15 +36,6 @@ A Machine Learning project that analyzes historical traffic data, visualizes tra
 
 ```text
 Smart-City-Traffic-Pattern/
-│
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── main.py
-├── preprocessing.py
-├── model.py
-├── visualization.py
-├── forecasting.py
 │
 ├── data/
 │   ├── train_aWnotuB.csv
@@ -62,26 +59,33 @@ Smart-City-Traffic-Pattern/
 │       ├── actual_vs_predicted.png
 │       └── model_results.csv
 │
-└── __pycache__/ (ignored)
+├── forecasting.py
+├── main.py
+├── model.py
+├── preprocessing.py
+├── visualization.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/PalakD42/Smart-City-Traffic-Pattern.git
 ```
 
-### Navigate to the project directory
+Navigate to the project folder:
 
 ```bash
 cd Smart-City-Traffic-Pattern
 ```
 
-### Install the required dependencies
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -91,8 +95,6 @@ pip install -r requirements.txt
 
 ## ▶️ Run the Project
 
-Execute:
-
 ```bash
 python main.py
 ```
@@ -101,108 +103,57 @@ python main.py
 
 ## 📊 Outputs
 
-After running the project, the following outputs are generated automatically.
+The project generates:
 
 ### 📈 Graphs
 
-- Traffic Trend Analysis
-- Hourly Traffic Distribution
+- Traffic Trend
+- Hourly Traffic Analysis
 - Monthly Traffic Analysis
 - Weekday Traffic Analysis
 - Vehicle Distribution
 - Junction-wise Average Traffic
 - All Junction Comparison
 
-### 🤖 Prediction
+### 🤖 Predictions
 
 - Actual vs Predicted Traffic Graph
-- Model Performance Results (CSV)
+- Model Performance Results (`model_results.csv`)
 
 ### 🔮 Forecast
 
-- Future Traffic Forecast (CSV)
+- Future Traffic Forecast (`future_forecast.csv`)
 - Future Traffic Forecast Graph
 
-All outputs are stored inside the **output/** folder.
+All generated files are saved in the **output/** directory.
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Workflow
 
 1. Load the traffic dataset.
 2. Preprocess and clean the data.
 3. Perform exploratory data analysis.
-4. Visualize traffic patterns.
+4. Visualize traffic trends.
 5. Train the machine learning model.
 6. Evaluate model performance.
-7. Predict traffic volume.
+7. Generate predictions.
 8. Forecast future traffic.
-9. Save graphs and prediction results.
-
----
-
-## 📁 Dataset
-
-The project uses historical traffic data containing:
-
-- Date
-- Time
-- Junction ID
-- Vehicle Count
-
----
-
-## 📄 .gitignore
-
-The project includes a `.gitignore` file to exclude unnecessary files from version control.
-
-```gitignore
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-venv/
-.venv/
-env/
-
-# IDE settings
-.vscode/
-.idea/
-
-# Environment variables
-.env
-
-# Build files
-build/
-dist/
-*.egg-info/
-
-# Log files
-*.log
-
-# Operating system files
-.DS_Store
-Thumbs.db
-
-# Generated outputs
-output/
-```
+9. Save graphs and results.
 
 ---
 
 ## 🚀 Future Enhancements
 
-- Deep Learning (LSTM) traffic forecasting
 - Real-time traffic prediction
+- LSTM-based forecasting
 - Weather data integration
-- Interactive Streamlit dashboard
-- Traffic congestion alerts
-- Web deployment using Flask/FastAPI
+- Interactive dashboard using Streamlit
+- API deployment with Flask/FastAPI
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
 **Palak Dwivedi**
 
@@ -212,10 +163,10 @@ GitHub: **https://github.com/PalakD42**
 
 ## 📄 License
 
-This project is developed for educational and academic purposes.
+This project is developed for educational and learning purposes.
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Support
 
-If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+If you found this project useful, don't forget to **⭐ Star** the repository!
