@@ -1,5 +1,5 @@
 import pandas as pd
-
+import os
 
 def load_data():
 
@@ -8,11 +8,8 @@ def load_data():
     print("=" * 60)
 
     # Load Dataset
-    df = pd.read_csv(
-    r"C:\Users\palak\Downloads\Project9_smart-city-traffic-patterns\Project9_smart-city-traffic-patterns\Project9_smart-city-traffic-patterns\smart-city-traffic-patterns\train_aWnotuB.csv"
-)
-
-
+    file_path = os.path.join("data", "train_aWnotuB.csv")
+    df = pd.read_csv(file_path)
 
     print("\nFirst 5 Rows")
     print(df.head())
@@ -28,8 +25,6 @@ def load_data():
 
     print("\nMissing Values")
     print(df.isnull().sum())
-
-   
 
     # Convert DateTime column
     df["DateTime"] = pd.to_datetime(df["DateTime"])
@@ -61,7 +56,7 @@ def load_data():
     # Reset Index
     df.reset_index(drop=True, inplace=True)
 
-    # Remove Duplicate Rows (if any)
+    # Remove Duplicate Rows
     df.drop_duplicates(inplace=True)
 
     print("\nUpdated Dataset")
